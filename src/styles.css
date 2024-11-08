@@ -17,8 +17,17 @@ body {
 }
 
 /* Navbar */
+
+.logo {
+  opacity: 0; /* Logo invisible inicialmente */
+  transition: opacity 1s ease-in-out; /* Transición suave de opacidad */
+}
+
+.logo.visible {
+  opacity: 1; /* Logo completamente visible */
+}
+
 .navbar {
-  background-image: url('https://agendalafecha.com/invitaciones/vintage/assets/img/canciones.jpg');
   padding: 1rem 0;
   width: 100%;
   height: 100vh;
@@ -176,6 +185,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.carousel {
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: opacity 3s ease, transform 3s ease;
+}
+
+.carousel.animate {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Estilo para el título del carrusel */
