@@ -6,6 +6,7 @@ const RSVPForm = () => {
   const handleOnClick = () => {
     window.open("https://forms.gle/MApWvWyLZpWw8BwQ8", "_blank");
   };
+  
 
   const handleAddToCalendar = () => {
     // Configura los detalles del evento
