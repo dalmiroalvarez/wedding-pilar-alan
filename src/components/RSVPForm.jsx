@@ -8,33 +8,32 @@ const RSVPForm = () => {
   };
 
   const handleAddToCalendar = () => {
-    const eventTitle = "Casamiento Pilar y Alan";
-    const eventStart = "2025-01-31T19:00:00"; // Reemplazar con la fecha y hora de tu evento
-    const eventEnd = "2025-02-01T06:00:00"; // Reemplazar con la hora de finalización
-    const eventLocation = "Espacio Tigre"; // Reemplazar con la ubicación
-    const eventDescription = "¡No te olvides de confirmar tu asistencia!";
-
-    const icsContent = `
-      BEGIN:VCALENDAR
-      VERSION:2.0
-      PRODID:-//Pilar y Alan//NONSGML v1.0//EN
-      BEGIN:VEVENT
-      SUMMARY:${eventTitle}
-      DTSTART:${eventStart.replace(/[-:]/g, "")}
-      DTEND:${eventEnd.replace(/[-:]/g, "")}
-      LOCATION:${eventLocation}
-      DESCRIPTION:${eventDescription}
-      END:VEVENT
-      END:VCALENDAR
-      `.trim();
-
-    // Crear un Blob y generar una URL para descargar el archivo
-    const blob = new Blob([icsContent], { type: "text/calendar" });
-    const link = document.createElement("a");
-    link.href = URL.createObjectURL(blob);
-    link.download = `${eventTitle}.ics`;
-    link.click();
+    // Configura los detalles del evento
+    const eventDetails = {
+      title: 'Casamiento Pili y Alan',
+      start: new Date('2025-01-31T19:00:00'),
+      end: new Date('2025-02-01T05:00:00'),
+      location: 'Espacio Tigre',
+      description: '¡Te esperamos para festejar!'
+    };
+  
+    // Crea el enlace de Google Calendar
+    const googleCalendarUrl = createGoogleCalendarLink(eventDetails);
+  
+    // Abre el enlace en una nueva pestaña
+    window.open(googleCalendarUrl, '_blank');
   };
+  
+  function createGoogleCalendarLink(eventDetails) {
+    const { title, start, end, location, description } = eventDetails;
+  
+    // Formatea las fechas en el formato requerido por Google Calendar
+    const startDate = start.toISOString().replace(/[-:]|\.\d+/g, '');
+    const endDate = end.toISOString().replace(/[-:]|\.\d+/g, '');
+  
+    // Construye el enlace de Google Calendar
+    return `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(title)}&dates=${startDate}/${endDate}&details=${encodeURIComponent(description)}&location=${encodeURIComponent(location)}`;
+  }
 
   return (
     <div id="rsvp" className="rsvp" style={{display: "flex", flexDirection: "column", alignItems: "center"}}>

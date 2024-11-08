@@ -33,8 +33,8 @@ body {
 }
 
 .navbar img {
-  width: fit-content;
-  height: fit-content;
+  width: min-content;
+  height: min-content;
   z-index: 1000;
 }
 
@@ -77,6 +77,12 @@ body {
     height: 100vh;
     background-size: cover;
     background-position: inherit;
+  }
+
+  .navbar img {
+    width: 90%;
+    height: auto;
+    z-index: 1000;
   }
 
   .navbar-brand {
@@ -164,7 +170,7 @@ body {
 /* Estilo general para los elementos del carrusel */
 .carousel .carousel-item {
   width: 100%;
-  height: 45vh; /* 60% de la altura de la ventana en dispositivos grandes */
+  height: 70vh; /* 60% de la altura de la ventana en dispositivos grandes */
   object-fit: cover;
   background-color: #ecddca;
   display: flex;
@@ -194,6 +200,54 @@ body {
   text-align: center; /* Centrado del texto */
   max-width: 100%; /* Limita el ancho para pantallas pequeñas */
   margin: 0 auto; /* Centra la descripción horizontalmente */
+}
+
+.carousel-bank-title {
+  font-family: 'Libre Baskerville', serif;
+  letter-spacing: 10px;
+  color: #333333;
+  text-transform: uppercase;
+  font-size: 1em; /* Usamos rem para que sea relativo al tamaño base */
+  font-weight: 400;
+  text-align: center; /* Centrado del texto */
+  max-width: 100%; /* Limita el ancho para pantallas pequeñas */
+  margin: 0 auto; /* Centra el título horizontalmente */
+}
+
+.gifts-container {
+  display: flex;
+  gap: 2em;
+}
+
+@media (max-width: 480px) {
+  .gifts-container {
+    flex-direction: column;
+    width: 90%;
+  }
+}
+
+.carousel-gifts {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.2em;
+  color: #333333;
+  text-align: center; /* Centrado del texto */
+  max-width: 100%; /* Limita el ancho para pantallas pequeñas */
+  margin: 0 auto; /* Centra el título horizontalmente */
+}
+
+.carousel-bank-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1em; /* Tamaño de fuente más pequeño y ajustable */
+  color: #333333;
+  text-align: center; /* Centrado del texto */
+  max-width: 100%; /* Limita el ancho para pantallas pequeñas */
+  margin: 0 auto;
+}
+
+.carousel img {
+  width: 180px;
 }
 
 @media (max-width: 1200px) {
@@ -228,7 +282,11 @@ body {
 /* Ajuste para teléfonos móviles */
 @media (max-width: 480px) {
   .carousel .carousel-item {
-    height: 55vh; /* Menor altura en dispositivos más pequeños */
+    height: 75vh; /* Menor altura en dispositivos más pequeños */
+  }
+
+  .carousel img {
+    width: 100px;
   }
 
   .carousel-caption h4 {
@@ -238,6 +296,16 @@ body {
   .carousel-caption p {
     max-width: 95%;
     font-size: 1em; /* Reducir el tamaño del texto */
+  }
+
+  .carousel-bank-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 0.9em; /* Tamaño de fuente más pequeño y ajustable */
+    color: #333333;
+    text-align: center; /* Centrado del texto */
+    max-width: 100%; /* Limita el ancho para pantallas pequeñas */
+    margin: 0 auto;
   }
 }
 
