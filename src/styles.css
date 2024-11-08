@@ -1,0 +1,690 @@
+/* BaskerVille */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+/* Monsterrat */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  background-image: url('https://agendalafecha.com/invitaciones/vintage/assets/img/canciones.jpg');
+  padding: 1rem 0;
+  width: 100%;
+  height: 100vh;
+  border-bottom: 1px solid #ddd;
+  background-size: contain;
+  background-position: center;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+}
+
+.navbar img {
+  width: fit-content;
+  height: fit-content;
+  z-index: 1000;
+}
+
+/* Media query para pantallas grandes */
+@media (min-width: 1200px) {
+  .navbar {
+    padding: 2rem 0; /* Aumentar el padding para pantallas grandes */
+  }
+
+  .navbar-brand {
+    font-size: 2rem; /* Aumentar el tamaño de la fuente */
+  }
+}
+
+/* Media query para pantallas medianas (tablets) */
+@media (max-width: 1024px) {
+  .navbar {
+    height: 60vh; /* Reducir la altura para pantallas medianas */
+  }
+
+  .navbar-brand {
+    font-size: 1.8rem; /* Ajustar el tamaño de la fuente */
+  }
+}
+
+/* Media query para pantallas pequeñas (móviles grandes) */
+@media (max-width: 768px) {
+  .navbar {
+    height: 50vh; /* Ajustar la altura en dispositivos más pequeños */
+  }
+
+  .navbar-brand {
+    font-size: 1.6rem; /* Ajustar el tamaño de la fuente */
+  }
+}
+
+/* Media query para pantallas muy pequeñas (teléfonos pequeños) */
+@media (max-width: 480px) {
+  .navbar {
+    height: 100vh;
+    background-size: cover;
+    background-position: inherit;
+  }
+
+  .navbar-brand {
+    font-size: 1.4rem; /* Reducir el tamaño de la fuente */
+    margin-left: 0.5rem; /* Ajustar margen */
+  }
+}
+
+/* Home Section */
+.home {
+  padding-top: 4rem;
+  text-align: center;
+  background: #fafafa;
+  overflow-x: hidden;
+}
+
+.thanks-container {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+  background-color: #d28d66;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5em;
+  flex-direction: column;
+  
+}
+
+.thanks-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.3em; /* Tamaño de fuente más pequeño y ajustable */
+  text-align: center; /* Centrado del texto */
+  max-width: 100%; /* Limita el ancho para pantallas pequeñas */
+  margin: 0 auto; /* Centra la descripción horizontalmente */
+  color: #ffffff;
+}
+
+@media (min-width: 1200px) {
+  .thanks-container {
+    height: 25vh; /* Ajusta la altura en pantallas grandes */
+  }
+
+  .thanks-text {
+    font-size: 1.5em; /* Aumentar el tamaño del texto en pantallas grandes */
+  }
+}
+
+/* Media query para pantallas medianas (Tablets) */
+@media (max-width: 1024px) {
+  .thanks-container {
+    height: 30vh; /* Mantener altura adecuada en pantallas medianas */
+  }
+
+  .thanks-text {
+    font-size: 1.4em; /* Ajustar el tamaño del texto */
+  }
+}
+
+/* Media query para pantallas pequeñas (Móviles) */
+@media (max-width: 768px) {
+  .thanks-container {
+    height: 35vh; /* Aumentar altura en pantallas más pequeñas para mayor espacio */
+  }
+
+  .thanks-text {
+    font-size: 1.2em; /* Ajustar el tamaño del texto en pantallas móviles */
+  }
+}
+
+/* Media query para pantallas muy pequeñas (Teléfonos pequeños) */
+@media (max-width: 480px) {
+  .thanks-container {
+    height: 25vh; /* Asegurarse de que haya suficiente espacio en pantallas muy pequeñas */
+  }
+
+  .thanks-text {
+    font-size: 1.1em; /* Reducir el tamaño del texto en pantallas pequeñas */
+  }
+}
+
+
+
+/* Estilo general para los elementos del carrusel */
+.carousel .carousel-item {
+  width: 100%;
+  height: 45vh; /* 60% de la altura de la ventana en dispositivos grandes */
+  object-fit: cover;
+  background-color: #ecddca;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo para el título del carrusel */
+.carousel-caption h4 {
+  font-family: 'Libre Baskerville', serif;
+  letter-spacing: 10px;
+  color: #333333;
+  text-transform: uppercase;
+  font-size: 2em; /* Usamos rem para que sea relativo al tamaño base */
+  font-weight: 400;
+  text-align: center; /* Centrado del texto */
+  max-width: 90%; /* Limita el ancho para pantallas pequeñas */
+  margin: 0 auto; /* Centra el título horizontalmente */
+}
+
+/* Estilo para la descripción del carrusel */
+.carousel-caption p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem; /* Tamaño de fuente más pequeño y ajustable */
+  color: #333333;
+  text-align: center; /* Centrado del texto */
+  max-width: 100%; /* Limita el ancho para pantallas pequeñas */
+  margin: 0 auto; /* Centra la descripción horizontalmente */
+}
+
+@media (max-width: 1200px) {
+  .carousel .carousel-item {
+    height: 50vh; /* Ajuste de altura para pantallas más pequeñas */
+  }
+
+  .carousel-caption h4 {
+    font-size: 2.5rem; /* Reducir el tamaño del texto */
+  }
+
+  .carousel-caption p {
+    font-size: 1.3rem; /* Reducir el tamaño del texto */
+  }
+}
+
+/* Ajuste para tablets y dispositivos más pequeños */
+@media (max-width: 768px) {
+  .carousel .carousel-item {
+    height: 38vh; /* Menor altura para pantallas más pequeñas */
+  }
+
+  .carousel-caption h4 {
+    font-size: 2rem; /* Reducir el tamaño del texto */
+  }
+
+  .carousel-caption p {
+    font-size: 1rem; /* Reducir el tamaño del texto */
+  }
+}
+
+/* Ajuste para teléfonos móviles */
+@media (max-width: 480px) {
+  .carousel .carousel-item {
+    height: 55vh; /* Menor altura en dispositivos más pequeños */
+  }
+
+  .carousel-caption h4 {
+    font-size: 1.5rem; /* Reducir el tamaño del texto */
+  }
+
+  .carousel-caption p {
+    max-width: 95%;
+    font-size: 1em; /* Reducir el tamaño del texto */
+  }
+}
+
+.party-container {
+  background-image: url('https://agendalafecha.com/invitaciones/vintage/assets/img/canciones.jpg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 6px;
+  padding: 3em;
+  background-size: contain;
+  background-position: center;
+}
+
+.button-party {
+    color: white;
+    background-color: #d28d66;
+    border-radius: 4px;
+    padding: 10px 20px;
+    border: 1px solid #d28d66;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 25%;  
+}
+
+.party-text {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+  color: #444;
+  overflow-x: hidden;
+}
+
+.party {
+  font-family: 'Libre Baskerville', serif;
+  letter-spacing: 10px;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 400;
+  margin-top: 1rem;
+  letter-spacing: 10px;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .party-container {
+    width: 85%; /* Menor ancho en pantallas medianas */
+    padding: 2em; /* Menos padding en pantallas más pequeñas */
+  }
+
+  .button-party {
+    width: 70%; /* Ajuste en el ancho del botón */
+    font-size: 1.1rem; /* Aumentar ligeramente el tamaño del texto */
+  }
+
+  .party {
+    font-size: 2rem; /* Reducir el tamaño del texto en pantallas más pequeñas */
+  }
+}
+
+@media (max-width: 768px) {
+  .party-container {
+    width: 90%; /* Ancho flexible en tablets */
+    padding: 1.5em;
+  }
+
+  .button-party {
+    width: 80%; /* Aumentar el tamaño del botón */
+    font-size: 1rem; /* Ajustar el tamaño de la fuente */
+  }
+
+  .party {
+    font-size: 1.8rem; /* Reducir aún más el tamaño del texto */
+  }
+
+  .party-text {
+    font-size: 1.1rem; /* Reducir ligeramente el tamaño del texto en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .party-container {
+    width: 100%; /* Ancho casi completo en pantallas pequeñas */
+    padding: 2em;
+    gap: 0.5em;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .button-party {
+    width: 85%; /* Aumentar el tamaño del botón */
+    font-size: 1.2rem; /* Ajustar el tamaño del texto */
+  }
+
+  .party {
+    font-size: 1.5rem; /* Reducir aún más el tamaño del texto */
+  }
+
+  .party-text {
+    font-size: 0.9em; /* Ajuste de fuente para dispositivos más pequeños */
+  }
+}
+
+/* Countdown Section */
+.countdown {
+  background-color: #f8f9fa;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #666;
+  overflow-x: hidden;
+}
+
+.countdown-timers h4 {
+  font-family: 'Libre Baskerville', serif;
+  letter-spacing: 10px;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+.timer-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.countdown-circle {
+  width: 180px;
+  height: 180px;
+  border: 1px solid #666;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  padding: 1em;
+  color: #333;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+.countdown-image {
+  width: 150px;
+  margin-top: 1rem;
+}
+
+/* Media queries */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .countdown-circle {
+    width: 150px;
+    height: 150px;
+    font-size: 1.3rem;
+  }
+  .timer-container {
+    gap: 0.5rem;
+  }
+}
+
+/* Dispositivos móviles grandes */
+@media (max-width: 768px) {
+  .countdown-circle {
+    width: 120px;
+    height: 120px;
+    font-size: 1.2rem;
+  }
+  .countdown-image {
+    width: 120px;
+  }
+  .countdown h4 {
+    font-size: 1.2rem;
+  }
+}
+
+/* Teléfonos pequeños */
+@media (max-width: 480px) {
+  .timer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+  }
+  .countdown-circle {
+    width: 80px;
+    height: 80px;
+    font-size: 0.7em;
+  }
+  .countdown-image {
+    width: 100px;
+  }
+  .countdown h4 {
+    font-size: 1rem;
+  }
+}
+
+
+/* Ceremony & Party Section */
+.ceremony-party {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #fff8f8;
+}
+
+.button-lugar {
+  color: white;
+  background-color: #d28d66;
+  border-radius: 4px;
+  padding: 10px 20px;
+  border: 1px solid #d28d66;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-lugar:hover {
+  background-color: #b97a54;
+}
+
+.ceremony-party h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.event-details {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.event-section {
+  padding: 1rem;
+  color: #333;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  max-width: 600px; /* Limita el ancho para mejorar la lectura en pantallas grandes */
+  margin: 0 auto; /* Centra en pantalla */
+}
+
+.event-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #d28d66;
+}
+
+.event-section p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Media queries para diferentes dispositivos */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 1024px) {
+  .ceremony-party h2 {
+    font-size: 1.75rem;
+  }
+  .event-section {
+    font-size: 17px;
+    padding: 0.75rem;
+  }
+  .event-section h3 {
+    font-size: 1.4rem;
+  }
+}
+
+/* Dispositivos móviles grandes */
+@media (max-width: 768px) {
+  .ceremony-party h2 {
+    font-size: 1.5rem;
+  }
+  .button-lugar {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+  .event-section {
+    font-size: 16px;
+  }
+  .event-section h3 {
+    font-size: 1.25rem;
+  }
+}
+
+/* Teléfonos pequeños */
+@media (max-width: 480px) {
+  .ceremony-party {
+    padding: 1.5rem 1rem;
+  }
+  .ceremony-party h2 {
+    font-size: 1.3rem;
+  }
+  .button-lugar {
+    font-size: 15px;
+    padding: 8px 14px;
+  }
+  .event-section {
+    font-size: 15px;
+    padding: 0.5rem;
+  }
+  .event-section h3 {
+    font-size: 1.1rem;
+  }
+  .event-section p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Gallery Section */
+.gallery {
+  padding-left: 10em;
+  padding-right: 10em;
+  background-color: #fff;
+  text-align: center;
+  overflow-y: hidden;
+}
+
+.gallery h2 {
+  font-family: 'Libre Baskerville', serif;
+  letter-spacing: 10px;
+  color: #333333;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.gallery p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
+  gap: 16px; /* Espacio entre las fotos */
+  margin-top: 1em;
+  max-width: 100%; /* Asegura que no haya desbordamiento horizontal */
+}
+
+.gallery-item img {
+  width: 90%; /* Asegura que las imágenes no desborden */
+  height: auto;
+  object-fit: cover; /* Asegura que las imágenes se adapten al contenedor */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Ajusta la sombra en el hover */
+}
+
+@media (max-width: 1024px) {
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas en tablets */
+  }
+}
+
+/* Pantallas muy pequeñas (teléfonos pequeños) */
+@media (max-width: 480px) {
+  .gallery-grid {
+    grid-template-columns: 1fr; /* 1 columna en teléfonos pequeños */
+    justify-items: center; /* Centra el contenido en la columna */
+    padding: 0 10px; /* Agrega algo de espacio para evitar que las imágenes se toquen */
+    }
+
+    .gallery {
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+}
+
+/* RSVP Section */
+.rsvp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em 1em; /* Ajusta padding en dispositivos más pequeños */
+  text-align: center;
+  min-height: 80vh; /* Usa min-height en lugar de height para adaptabilidad */
+  background-color: #ecddca;
+}
+
+.rsvp h2 {
+  font-family: 'Libre Baskerville', serif;
+  letter-spacing: 10px;
+  color: #333333;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 1em; /* Espacio entre h2 y h4 */
+}
+
+.rsvp h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+  color: #333333;
+}
+
+/* Ajustes para pantallas medianas (tablets y laptops pequeñas) */
+@media (max-width: 1024px) {
+  .rsvp h2 {
+    font-size: 22px;
+    letter-spacing: 8px;
+  }
+  .rsvp h4 {
+    font-size: 18px;
+  }
+}
+
+/* Ajustes para pantallas pequeñas (teléfonos grandes) */
+@media (max-width: 768px) {
+  .rsvp h2 {
+    font-size: 20px;
+    letter-spacing: 6px;
+  }
+  .rsvp h4 {
+    font-size: 17px;
+  }
+}
+
+/* Ajustes para pantallas muy pequeñas (teléfonos pequeños) */
+@media (max-width: 480px) {
+  .rsvp {
+    padding: 2em 0.5em; /* Reduce el padding en los lados */
+  }
+  .rsvp h2 {
+    font-size: 18px;
+    letter-spacing: 5px;
+  }
+  .rsvp h4 {
+    font-size: 16px;
+  }
+}
