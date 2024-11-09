@@ -234,6 +234,18 @@ body {
   margin: 0 auto; /* Centra el título horizontalmente */
 }
 
+.carousel-bank-title-usd {
+  font-family: 'Libre Baskerville', serif;
+  letter-spacing: 10px;
+  color: #333333;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 400;
+  text-align: center; /* Centrado del texto */
+  max-width: 100%; /* Limita el ancho para pantallas pequeñas */
+  margin: 0 auto; /* Centra el título horizontalmente */
+}
+
 .gifts-container {
   display: flex;
   gap: 2em;
@@ -243,6 +255,19 @@ body {
   .gifts-container {
     flex-direction: column;
     width: 90%;
+  }
+
+  .carousel-bank-title-usd {
+    font-family: 'Libre Baskerville', serif;
+    letter-spacing: 5px;
+    color: #333333;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    white-space: nowrap;
+    font-weight: 400;
+    text-align: center; /* Centrado del texto */
+    max-width: 100%; /* Limita el ancho para pantallas pequeñas */
+    margin: 0 auto; /* Centra el título horizontalmente */
   }
 }
 

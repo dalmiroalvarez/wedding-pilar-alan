@@ -61,7 +61,7 @@ const Gifts = () => {
                   <p className="carousel-bank-text">C.U.I.L.: 27-38359134-7</p>
                 </div>
                 <div>
-                  <h4 className="carousel-bank-title">Cuenta en Dólares</h4>
+                  <h4 className="carousel-bank-title-usd">Cuenta en Dólares</h4>
                   <p className="carousel-bank-text">Alias: CASORIO.ALAN.PILI</p>
                   <p className="carousel-bank-text">Banco: Galicia</p>
                   <p className="carousel-bank-text">Cuenta: 400510813826</p>
@@ -71,7 +71,7 @@ const Gifts = () => {
                 </div>
               </div>
             ) : (
-              <p className="carousel-gifts">¡El mejor regalo es tu presencia! Si deseas realizarnos un regalo...</p>
+              <p className="carousel-gifts">¡El mejor regalo es tu presencia!<br/> Si deseas realizarnos un regalo...</p>
             )}
 
             <button

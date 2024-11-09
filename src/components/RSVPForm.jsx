@@ -52,7 +52,7 @@ const RSVPForm = () => {
         width={180}
         style={{marginTop: "1em"}}
       />
-      <h4>Agendá tu fecha en el calendario</h4>
+      <h4>Agendá la fecha en el calendario</h4>
       <button 
         className='button-lugar'
         style={{marginTop: "1em"}}
