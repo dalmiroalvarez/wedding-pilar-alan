@@ -52,7 +52,7 @@ const Gifts = () => {
             {showDetails ? (
               <div className="gifts-container">
                 <div>
-                  <h4 className="carousel-bank-title">Cuenta en Pesos</h4>
+                  <h4 className="carousel-bank-title-pesos">Cuenta en Pesos</h4>
                   <p className="carousel-bank-text">Alias: PILAR.RAMPOLDI</p>
                   <p className="carousel-bank-text">Banco: ICBC</p>
                   <p className="carousel-bank-text">Cuenta: 0542/01131290/19</p>

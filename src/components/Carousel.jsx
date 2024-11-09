@@ -45,7 +45,7 @@ const Carousel = () => {
             <img src={corazon} width={150} style={{ marginBottom: "20px" }} />
             <h4>LLEGÓ EL GRAN DÍA</h4>
             <p>"Somos una casualidad llena de intención"</p>
-            <p><i>Mario Benedetti</i></p>
+            <p><i>- Mario Benedetti</i></p>
           </div>
         </div>
       </div>

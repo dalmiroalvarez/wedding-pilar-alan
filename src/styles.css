@@ -234,6 +234,18 @@ body {
   margin: 0 auto; /* Centra el título horizontalmente */
 }
 
+.carousel-bank-title-pesos {
+  font-family: 'Libre Baskerville', serif;
+  letter-spacing: 10px;
+  color: #333333;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 400;
+  text-align: center; /* Centrado del texto */
+  max-width: 100%; /* Limita el ancho para pantallas pequeñas */
+  margin: 0 auto; /* Centra el título horizontalmente */
+}
+
 .carousel-bank-title-usd {
   font-family: 'Libre Baskerville', serif;
   letter-spacing: 10px;
@@ -258,6 +270,19 @@ body {
   }
 
   .carousel-bank-title-usd {
+    font-family: 'Libre Baskerville', serif;
+    letter-spacing: 5px;
+    color: #333333;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    white-space: nowrap;
+    font-weight: 400;
+    text-align: center; /* Centrado del texto */
+    max-width: 100%; /* Limita el ancho para pantallas pequeñas */
+    margin: 0 auto; /* Centra el título horizontalmente */
+  }
+
+  .carousel-bank-title-pesos {
     font-family: 'Libre Baskerville', serif;
     letter-spacing: 5px;
     color: #333333;
@@ -447,8 +472,8 @@ body {
   }
 
   .button-party {
-    width: 85%; /* Aumentar el tamaño del botón */
-    font-size: 1.2rem; /* Ajustar el tamaño del texto */
+    width: 65%; /* Aumentar el tamaño del botón */
+    font-size: 1rem; /* Ajustar el tamaño del texto */
   }
 
   .party {
