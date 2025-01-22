@@ -53,12 +53,12 @@ const Gifts = () => {
               <div className="gifts-container">
                 <div>
                   <h4 className="carousel-bank-title-pesos">Cuenta en Pesos</h4>
-                  <p className="carousel-bank-text">Alias: PILAR.RAMPOLDI</p>
-                  <p className="carousel-bank-text">Banco: ICBC</p>
-                  <p className="carousel-bank-text">Cuenta: 0542/01131290/19</p>
-                  <p className="carousel-bank-text">CBU: 0150542901000131290195</p>
-                  <p className="carousel-bank-text">Nombre: Maria del Pilar Alvarez Rampoldi</p>
-                  <p className="carousel-bank-text">C.U.I.L.: 27-38359134-7</p>
+                  <p className="carousel-bank-text">Alias: ALAN.POLEDO</p>
+                  <p className="carousel-bank-text">Banco: GALICIA</p>
+                  <p className="carousel-bank-text">Cuenta: 400517643824</p>
+                  <p className="carousel-bank-text">CBU: 0070382430004005176440</p>
+                  <p className="carousel-bank-text">Nombre: Alan Carlos Poledo Romero</p>
+                  <p className="carousel-bank-text">C.U.I.L.: 20-35367341-7</p>
                 </div>
                 <div>
                   <h4 className="carousel-bank-title-usd">Cuenta en Dólares</h4>
