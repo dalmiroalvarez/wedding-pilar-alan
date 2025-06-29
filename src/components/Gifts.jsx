@@ -53,21 +53,21 @@ const Gifts = () => {
               <div className="gifts-container">
                 <div>
                   <h4 className="carousel-bank-title-pesos">Cuenta en Pesos</h4>
-                  <p className="carousel-bank-text">Alias: ALAN.POLEDO</p>
+                  <p className="carousel-bank-text">Alias: ATUN.TRIGO.JULIO</p>
                   <p className="carousel-bank-text">Banco: GALICIA</p>
-                  <p className="carousel-bank-text">Cuenta: 400517643824</p>
-                  <p className="carousel-bank-text">CBU: 0070382430004005176440</p>
-                  <p className="carousel-bank-text">Nombre: Alan Carlos Poledo Romero</p>
-                  <p className="carousel-bank-text">C.U.I.L.: 20-35367341-7</p>
+                  <p className="carousel-bank-text">Cuenta: 4034266-1159-3</p>
+                  <p className="carousel-bank-text">CBU: 0070159030004034266132</p>
+                  <p className="carousel-bank-text">Nombre: Cinthia Patricia Torres</p>
+                  <p className="carousel-bank-text">C.U.I.L.: 24-36158469-0</p>
                 </div>
                 <div>
                   <h4 className="carousel-bank-title-usd">Cuenta en Dólares</h4>
-                  <p className="carousel-bank-text">Alias: CASORIO.ALAN.PILI</p>
+                  <p className="carousel-bank-text">Alias: MANTA.DIOS.ABACO</p>
                   <p className="carousel-bank-text">Banco: Galicia</p>
-                  <p className="carousel-bank-text">Cuenta: 400510813826</p>
-                  <p className="carousel-bank-text">CBU: 0070382431004005108167</p>
-                  <p className="carousel-bank-text">Nombre: Alan Carlos Poledo Romero</p>
-                  <p className="carousel-bank-text">C.U.I.L.: 20-35367341-7</p>
+                  <p className="carousel-bank-text">Cuenta: 4002623-9696-2</p>
+                  <p className="carousel-bank-text">CBU: 0070696031004002623926</p>
+                  <p className="carousel-bank-text">Nombre: Santiago Rufino</p>
+                  <p className="carousel-bank-text">C.U.I.L.: 20-37339791-2</p>
                 </div>
               </div>
             ) : (

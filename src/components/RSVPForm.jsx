@@ -4,18 +4,18 @@ import dresscode from "../images/icono-dresscode.svg"
 const RSVPForm = () => {
 
   const handleOnClick = () => {
-    window.open("https://forms.gle/MApWvWyLZpWw8BwQ8", "_blank");
+    window.open("https://docs.google.com/forms/d/e/1FAIpQLSf2yrrtVsw-mgx3hyw63q4KDhsUsPsUs6iR0RPNcMC3PeFZAA/viewform?usp=sharing&ouid=112190543209944920506", "_blank");
   };
   
 
   const handleAddToCalendar = () => {
     // Configura los detalles del evento
     const eventDetails = {
-      title: 'Casamiento Pili y Alan',
-      start: new Date('2025-01-31T19:00:00'),
-      end: new Date('2025-02-01T05:00:00'),
-      location: 'Espacio Tigre',
-      description: '¡Te esperamos para festejar!'
+      title: 'Casamiento Ceremonia Santi y Cin',
+      start: new Date('2025-10-11T16:00:00'),
+      end: new Date('2025-10-11T17:00:00'),
+      location: 'Capilla Santa Teresita, Gualeguaychú Golf Club S/N, B1667 Manuel Alberti, Provincia de Buenos Aires',
+      description: 'Ceremonia de casamiento de Santiago y Cintia. ¡Te esperamos para compartir este momento tan especial!'
     };
   
     // Crea el enlace de Google Calendar

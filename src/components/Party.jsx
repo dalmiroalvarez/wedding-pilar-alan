@@ -3,7 +3,7 @@ import React from 'react'
 const Party = () => {
 
   const handleOnClick = () => {
-    window.open("  https://forms.gle/MnJ6S7bYXDQXZSZg9", "_blank");
+    window.open("https://docs.google.com/forms/d/e/1FAIpQLSecdHfcY4Ut9mrcn6xfN-fn_gNz9W5S21Mp8GML4mG9P1jNRQ/viewform?usp=sharing&ouid=112190543209944920506", "_blank");
   };
 
 

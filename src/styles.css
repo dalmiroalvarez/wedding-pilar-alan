@@ -731,9 +731,9 @@ body {
 }
 
 .gallery-item img {
-  width: 90%; /* Asegura que las imágenes no desborden */
-  height: auto;
-  object-fit: cover; /* Asegura que las imágenes se adapten al contenedor */
+  width: 90%;
+  height: 300px; /* Altura fija para todas las imágenes */
+  object-fit: cover; /* Mantiene la proporción y recorta si es necesario */
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -745,6 +745,10 @@ body {
 @media (max-width: 1024px) {
   .gallery-grid {
     grid-template-columns: repeat(3, 1fr); /* 3 columnas en tablets */
+  }
+  
+  .gallery-item img {
+    height: 250px; /* Altura menor en tablets */
   }
 }
 
@@ -759,6 +763,10 @@ body {
     .gallery {
       padding-left: 1em;
       padding-right: 1em;
+    }
+    
+    .gallery-item img {
+      height: 200px; /* Altura menor en móviles */
     }
 }
 
