@@ -42,8 +42,8 @@ body {
 }
 
 .navbar img {
-  max-width: 80vw; /* Máximo 80% del ancho de la ventana */
-  max-height: 60vh; /* Máximo 60% de la altura de la ventana */
+  max-width: 95vw; /* Aumentado de 90vw a 95vw */
+  max-height: 80vh; /* Aumentado de 70vh a 80vh */
   width: auto;
   height: auto;
   object-fit: contain; /* Mantiene la proporción */
@@ -57,8 +57,8 @@ body {
   }
 
   .navbar img {
-    max-width: 70vw; /* Un poco más pequeño en pantallas muy grandes */
-    max-height: 50vh;
+    max-width: 85vw; /* Aumentado de 80vw a 85vw */
+    max-height: 70vh; /* Aumentado de 60vh a 70vh */
   }
 
   .navbar-brand {
@@ -73,8 +73,8 @@ body {
   }
 
   .navbar img {
-    max-width: 85vw;
-    max-height: 45vh;
+    max-width: 95vw; /* Aumentado de 90vw a 95vw */
+    max-height: 65vh; /* Aumentado de 55vh a 65vh */
   }
 
   .navbar-brand {
@@ -89,8 +89,8 @@ body {
   }
 
   .navbar img {
-    max-width: 90vw;
-    max-height: 40vh;
+    max-width: 98vw; /* Aumentado de 95vw a 98vw */
+    max-height: 60vh; /* Aumentado de 50vh a 60vh */
   }
 
   .navbar-brand {
@@ -107,8 +107,8 @@ body {
   }
 
   .navbar img {
-    max-width: 95vw;
-    max-height: 35vh;
+    max-width: 100vw; /* Aumentado de 98vw a 100vw */
+    max-height: 55vh; /* Aumentado de 45vh a 55vh */
     width: auto;
     height: auto;
     z-index: 1000;
